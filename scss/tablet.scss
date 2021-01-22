@@ -1,0 +1,17 @@
+/* For tables main section*/
+.tablet {
+  display: flex;
+  margin: auto;
+  width: 930px;
+}
+
+.benefits {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.plans__container-slider {
+  justify-content: space-evenly;
+}
