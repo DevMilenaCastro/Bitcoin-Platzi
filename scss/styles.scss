@@ -90,6 +90,11 @@ html {
     font-weight: 500;
     text-decoration: none;
   }
+  hr {
+    height: 1px;
+    opacity: 0.1;
+    width: 60px;
+  }
 }
 
 .lines {
@@ -120,7 +125,7 @@ html {
     background-color: var(--black);
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: 50vh;
     position: absolute;
     right: 0px;
     top: 8vh;
@@ -276,7 +281,7 @@ main {
     min-width: 235px;
     width: 70%;
     &--title {
-      color: var(--bitcoin-orange);
+      color: #9e651e;
       @include font-bold;
       margin-bottom: 15px;
       margin-top: 10px;
@@ -296,7 +301,7 @@ main {
       }
       td {
         background-color: var(--just-white);
-        color: var(--grey);
+        color: #757575;
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 1.9rem;
@@ -338,14 +343,13 @@ main {
       }
     }
     &--date {
-      background-color: var(--soft-orange);
       border-radius: 8px;
       color: var(--warm-black);
       height: 30px;
       margin: 0 auto;
       margin-top: 15px;
       padding: 8px;
-      width: 190px;
+      width: 210px;
       p {
         color: var(--warm-black);
         font-size: 1rem;
@@ -353,24 +357,15 @@ main {
       }
     }
     &--title2 {
-      color: var(--secondary-blue);
+      color: #236baf;
       @include font-bold;
       margin-bottom: 15px;
     }
-    &--date2 {
+    .date1 {
+      background-color: var(--soft-orange);
+    }
+    .date2 {
       background-color: var(--soft-blue);
-      border-radius: 8px;
-      color: var(--warm-black);
-      height: 30px;
-      margin: 0 auto;
-      margin-top: 15px;
-      padding: 8px;
-      width: 190px;
-      p {
-        color: var(--warm-black);
-        font-size: 1rem;
-        line-height: 1.5rem;
-      }
     }
   }
 }
@@ -380,20 +375,23 @@ main {
 /*********************************************/
 .before-footer {
   align-items: center;
-  background-color: var(--orange);
+  background: linear-gradient(
+    207.8deg,
+    var(--orange) 16.69%,
+    var(--warm-black)
+  );
   display: flex;
   height: 150px;
   justify-content: space-evenly;
   width: 100%;
   &__left {
-    align-items: center;
     display: flex;
-    justify-content: center;
-    width: 50%;
+    justify-content: space-between;
+    width: 60%;
     &--left-ul {
       display: flex;
       list-style: none;
-      justify-content: space-evenly;
+      justify-content: space-around;
       width: 50%;
     }
     li {
